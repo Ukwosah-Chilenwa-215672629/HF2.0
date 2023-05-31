@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -38,9 +39,9 @@ export const NavBar = () => {
           </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navabr-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#testimonials" className={activeLink === 'testimonials' ? 'active navabr-link': 'navbar-link'}onClick={() => onUpdateActiveLink('testimonials')}>Community</Nav.Link>
-            <Nav.Link href="#journey" className={activeLink === 'journey' ? 'active navabr-link': 'navbar-link'}onClick={() => onUpdateActiveLink('journey')}>Why?</Nav.Link>
+            <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navabr-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/testimonials" className={activeLink === 'testimonials' ? 'active navabr-link': 'navbar-link'}onClick={() => onUpdateActiveLink('testimonials')}>Community</Nav.Link>
+            <Nav.Link as={Link} to="/team" className={activeLink === 'team' ? 'active navabr-link': 'navbar-link'}onClick={() => onUpdateActiveLink('team')}>Why?</Nav.Link>
             
           </Nav>
           <span className='navbar-text'>

@@ -1,5 +1,6 @@
 import './App.css';
 import './components/Formm.css';
+import Team from './components/Team'
 import { NavBar } from './components/NavBar';
 import{Banner} from  './components/Banner';
 import  Form  from './components/Formm';
@@ -11,8 +12,9 @@ function App() {
   <div className='App'>
     <NavBar />
     <Banner/>
-
+    {/* <Team/> */}
     <Form/>
+
     </div>
 
   );

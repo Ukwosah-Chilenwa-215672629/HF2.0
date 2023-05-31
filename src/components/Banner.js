@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../assets/img/LandingPic.svg"
 import {useState, useEffect} from "react" 
 
 export const Banner = () => {
@@ -36,7 +36,7 @@ export const Banner = () => {
             setDelta(500);
         }
     }
-    //hey
+    
     return(
         <section className="banner" id="home">
             <Container>
