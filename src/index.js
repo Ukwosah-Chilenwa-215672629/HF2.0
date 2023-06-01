@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import Team from './components/Team';
 import { NavBar } from './components/NavBar';
+import{Banner} from  './components/Banner';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "team",
     element: <Team/>,
+  },
+  {
+    path: "commu",
+    element: <Banner/>,
   },
 ]);
 

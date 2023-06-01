@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/img/LandingPic.svg"
 import {useState, useEffect} from "react" 
+import { NavBar } from "./NavBar";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -38,6 +39,7 @@ export const Banner = () => {
     }
     
     return(
+        <div className='tuhh'><NavBar/>  
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
@@ -53,5 +55,6 @@ export const Banner = () => {
                 </Row>            
             </Container>
         </section>
+         </div> 
     )
 }
